@@ -15,5 +15,19 @@ namespace DUCS2020CSharp
         {
             InitializeComponent();
         }
+
+        
+
+        private void BtnMultiplyTable_Click(object sender, EventArgs e)
+        {
+            MultiplyTable m1 = new MultiplyTable();
+            m1.ShowDialog();
+        }
+
+        private void btnCalculator_Click(object sender, EventArgs e)
+        {
+            Calculator c1 = new Calculator();
+            c1.ShowDialog();
+        }
     }
 }

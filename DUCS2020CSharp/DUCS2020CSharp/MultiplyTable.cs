@@ -18,9 +18,16 @@ namespace DUCS2020CSharp
 
         private void btnLoop_Click(object sender, EventArgs e)
         {
-            int loopStart = int.Parse(txtBox1.Text);
-            int loopEnd = int.Parse(txtBox2.Text);
+            
+            int loopStart, loopEnd;
+            bool isNumber1 = int.TryParse(txtBox1.Text, out loopStart);
+            bool isNumber2 = int.TryParse(txtBox2.Text, out loopEnd);
             int multiplyBy = 3;
+            if (!isNumber1 || !isNumber2)
+            {
+                MessageBox.Show("Please Enter Numbers!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             for (int i = loopStart; i <= loopEnd; i++)
             {

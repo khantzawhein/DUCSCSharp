@@ -30,6 +30,7 @@
         {
             this.BtnMultiplyTable = new System.Windows.Forms.Button();
             this.btnCalculator = new System.Windows.Forms.Button();
+            this.btnMenuBarEx = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnMultiplyTable
@@ -52,11 +53,22 @@
             this.btnCalculator.UseVisualStyleBackColor = true;
             this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
+            // btnMenuBarEx
+            // 
+            this.btnMenuBarEx.Location = new System.Drawing.Point(282, 156);
+            this.btnMenuBarEx.Name = "btnMenuBarEx";
+            this.btnMenuBarEx.Size = new System.Drawing.Size(165, 45);
+            this.btnMenuBarEx.TabIndex = 2;
+            this.btnMenuBarEx.Text = "MenuBarEx";
+            this.btnMenuBarEx.UseVisualStyleBackColor = true;
+            this.btnMenuBarEx.Click += new System.EventHandler(this.btnMenuBarEx_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMenuBarEx);
             this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.BtnMultiplyTable);
             this.Name = "Form1";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button BtnMultiplyTable;
         private System.Windows.Forms.Button btnCalculator;
+        private System.Windows.Forms.Button btnMenuBarEx;
     }
 }
 

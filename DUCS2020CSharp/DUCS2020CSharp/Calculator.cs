@@ -11,6 +11,8 @@ namespace DUCS2020CSharp
 {
     public partial class Calculator : Form
     {
+        double total1, total2 = 0;
+        char Operator = '+';
         public Calculator()
         {
             InitializeComponent();
@@ -23,22 +25,61 @@ namespace DUCS2020CSharp
 
         private void btnDiv_Click(object sender, EventArgs e)
         {
+            if (Operator == '+')
+            {
+                total1 += Double.Parse(txtDisplay.Text);
+            }
+            else if (Operator == '/')
+            {
+                total1 /= Double.Parse(txtDisplay.Text);
+            }
+            txtDisplay.Clear();
+            Operator = '/';
 
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
+            if (Operator == '+')
+            {
+                total1 += Double.Parse(txtDisplay.Text);
+            }
+            else if (Operator == '-')
+            {
+                total1 -= Double.Parse(txtDisplay.Text);
+            }
+            txtDisplay.Clear();
+            Operator = '-';
 
         }
 
         private void btnMulti_Click(object sender, EventArgs e)
         {
+            if (Operator == '+')
+            {
+                total1 += Double.Parse(txtDisplay.Text);
+            }
+            else if (Operator == '*')
+            {
+                total1 *= Double.Parse(txtDisplay.Text);
+            }
+            txtDisplay.Clear();
+            Operator = '*';
 
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-
+            if (Operator == '+')
+            {
+                total1 += Double.Parse(txtDisplay.Text);
+            }
+            else if (Operator == '-')
+            {
+                total1 -= Double.Parse(txtDisplay.Text);
+            }
+            txtDisplay.Clear();
+            Operator = '+';
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
@@ -93,12 +134,39 @@ namespace DUCS2020CSharp
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-
+            switch (Operator)
+            {
+                case '+':
+                    {
+                        total2 = total1 + double.Parse(txtDisplay.Text);
+                        break;
+                    }
+                case '*':
+                    {
+                        total2 = total1 * double.Parse(txtDisplay.Text);
+                        break;
+                    }
+                case '-':
+                    {
+                        total2 = total1 - double.Parse(txtDisplay.Text);
+                        break;
+                    }
+                case '/':
+                    {
+                        total2 = total1 / double.Parse(txtDisplay.Text);
+                        break;
+                    }
+            }
+            txtDisplay.Text = total2.ToString();
+            Operator = '+';
+            total1 = 0;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-
+            Operator = '+';
+            total1 = total2 = 0;
+            txtDisplay.Clear();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

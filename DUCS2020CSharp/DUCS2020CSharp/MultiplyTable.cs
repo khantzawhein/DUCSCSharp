@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace DUCS2020CSharp
 {
@@ -33,6 +34,24 @@ namespace DUCS2020CSharp
             {
                 int result = i * multiplyBy;
                 listBox1.Items.Add(multiplyBy + " * " + i + " = " + result);
+            }
+        }
+
+        private void btnArrayList_Click(object sender, EventArgs e)
+        {
+            ArrayList list = new ArrayList();
+            list.Add("Thuta");
+            list.Add("Ko KO");
+            foreach (string name in list)
+            {
+                listBox1.Items.Add(name);
+            }
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("Thuta",  50);
+            hashtable.Add("Ko Ko", 80);
+            foreach (DictionaryEntry name in hashtable)
+            {
+                listBox1.Items.Add("Name is" + name.Key + " mark is : " + name.Value);
             }
         }
     }

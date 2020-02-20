@@ -34,6 +34,7 @@
             this.txtBox2 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnLoop = new System.Windows.Forms.Button();
+            this.btnArrayList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBox1
@@ -86,11 +87,22 @@
             this.btnLoop.UseVisualStyleBackColor = true;
             this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
             // 
+            // btnArrayList
+            // 
+            this.btnArrayList.Location = new System.Drawing.Point(295, 109);
+            this.btnArrayList.Name = "btnArrayList";
+            this.btnArrayList.Size = new System.Drawing.Size(112, 28);
+            this.btnArrayList.TabIndex = 6;
+            this.btnArrayList.Text = "Array List";
+            this.btnArrayList.UseVisualStyleBackColor = true;
+            this.btnArrayList.Click += new System.EventHandler(this.btnArrayList_Click);
+            // 
             // MultiplyTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 349);
+            this.Controls.Add(this.btnArrayList);
             this.Controls.Add(this.btnLoop);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
@@ -112,5 +124,6 @@
         private System.Windows.Forms.TextBox txtBox2;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnLoop;
+        private System.Windows.Forms.Button btnArrayList;
     }
 }

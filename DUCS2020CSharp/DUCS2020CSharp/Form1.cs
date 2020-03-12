@@ -38,7 +38,7 @@ namespace DUCS2020CSharp
 
         private void btnCalculateTwoNum_Click(object sender, EventArgs e)
         {
-            Calcu
+          
         }
     }
 }

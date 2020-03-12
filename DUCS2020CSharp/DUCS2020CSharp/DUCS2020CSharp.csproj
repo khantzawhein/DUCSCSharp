@@ -70,10 +70,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\CalculateTwoNumbers.cs">
+    <Compile Include="CalculateTwoNumbers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\CalculateTwoNumbers.Designer.cs">
+    <Compile Include="CalculateTwoNumbers.Designer.cs">
       <DependentUpon>CalculateTwoNumbers.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Calculator.resx">
@@ -98,7 +98,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Resources\CalculateTwoNumbers.resx">
+    <EmbeddedResource Include="CalculateTwoNumbers.resx">
       <DependentUpon>CalculateTwoNumbers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

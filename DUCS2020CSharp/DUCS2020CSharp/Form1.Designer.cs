@@ -31,6 +31,7 @@
             this.BtnMultiplyTable = new System.Windows.Forms.Button();
             this.btnCalculator = new System.Windows.Forms.Button();
             this.btnMenuBarEx = new System.Windows.Forms.Button();
+            this.btnCalculateTwoNum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnMultiplyTable
@@ -55,7 +56,7 @@
             // 
             // btnMenuBarEx
             // 
-            this.btnMenuBarEx.Location = new System.Drawing.Point(282, 156);
+            this.btnMenuBarEx.Location = new System.Drawing.Point(282, 135);
             this.btnMenuBarEx.Name = "btnMenuBarEx";
             this.btnMenuBarEx.Size = new System.Drawing.Size(165, 45);
             this.btnMenuBarEx.TabIndex = 2;
@@ -63,11 +64,22 @@
             this.btnMenuBarEx.UseVisualStyleBackColor = true;
             this.btnMenuBarEx.Click += new System.EventHandler(this.btnMenuBarEx_Click);
             // 
+            // btnCalculateTwoNum
+            // 
+            this.btnCalculateTwoNum.Location = new System.Drawing.Point(282, 186);
+            this.btnCalculateTwoNum.Name = "btnCalculateTwoNum";
+            this.btnCalculateTwoNum.Size = new System.Drawing.Size(165, 45);
+            this.btnCalculateTwoNum.TabIndex = 3;
+            this.btnCalculateTwoNum.Text = "CalculateTwoNum";
+            this.btnCalculateTwoNum.UseVisualStyleBackColor = true;
+            this.btnCalculateTwoNum.Click += new System.EventHandler(this.btnCalculateTwoNum_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCalculateTwoNum);
             this.Controls.Add(this.btnMenuBarEx);
             this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.BtnMultiplyTable);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button BtnMultiplyTable;
         private System.Windows.Forms.Button btnCalculator;
         private System.Windows.Forms.Button btnMenuBarEx;
+        private System.Windows.Forms.Button btnCalculateTwoNum;
     }
 }
 

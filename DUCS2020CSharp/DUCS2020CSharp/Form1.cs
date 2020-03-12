@@ -35,5 +35,10 @@ namespace DUCS2020CSharp
             MenuBarEx menu1 = new MenuBarEx();
             menu1.Show();
         }
+
+        private void btnCalculateTwoNum_Click(object sender, EventArgs e)
+        {
+            Calcu
+        }
     }
 }

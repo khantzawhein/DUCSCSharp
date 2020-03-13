@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DUCS2020CSharp.Resources
+namespace DUCS2020CSharp
 {
     public partial class CalculateTwoNumbers : Form
     {

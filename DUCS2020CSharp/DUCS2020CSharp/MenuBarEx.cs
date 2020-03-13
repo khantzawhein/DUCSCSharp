@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace DUCS2020CSharp
@@ -77,7 +72,7 @@ namespace DUCS2020CSharp
         private void mnuViewImages_Click(object sender, EventArgs e)
         {
             openFD.Title = "Insert an image";
-            openFD.Filter = "JPEG Images|*.jpg|GIF Files|*.gif|All Files|*.*";
+            openFD.Filter = "JPEG Images|*.jpg|GIF Files|*.gif";
             openFD.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             openFD.FileName = "";
             if (openFD.ShowDialog() == DialogResult.Cancel)

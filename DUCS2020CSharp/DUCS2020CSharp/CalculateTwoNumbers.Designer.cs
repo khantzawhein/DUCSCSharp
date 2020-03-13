@@ -1,4 +1,4 @@
-﻿namespace DUCS2020CSharp.Resources
+﻿namespace DUCS2020CSharp
 {
     partial class CalculateTwoNumbers
     {

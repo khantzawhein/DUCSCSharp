@@ -32,13 +32,26 @@ namespace DUCS2020CSharp
 
         private void btnMenuBarEx_Click(object sender, EventArgs e)
         {
-            MenuBarEx menu1 = new MenuBarEx();
+            Adding_Menus menu1 = new Adding_Menus();
             menu1.Show();
         }
 
         private void btnCalculateTwoNum_Click(object sender, EventArgs e)
         {
-          
+            CalculateTwoNumbers cal1 = new CalculateTwoNumbers();
+            cal1.Show();
+        }
+
+        private void btnArrandLoops_Click(object sender, EventArgs e)
+        {
+            ArraysAndLoops arr1 = new ArraysAndLoops();
+            arr1.Show();
+        }
+
+        private void btnUserForm_Click(object sender, EventArgs e)
+        {
+            UserForm userForm = new UserForm();
+            userForm.Show();
         }
     }
 }

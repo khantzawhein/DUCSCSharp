@@ -44,11 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adding Menus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adding Menus.Designer.cs">
+      <DependentUpon>Adding Menus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArraysAndLoops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArraysAndLoops.Designer.cs">
+      <DependentUpon>ArraysAndLoops.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CVForm.Designer.cs">
+      <DependentUpon>CVForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -76,8 +94,23 @@
     <Compile Include="CalculateTwoNumbers.Designer.cs">
       <DependentUpon>CalculateTwoNumbers.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adding Menus.resx">
+      <DependentUpon>Adding Menus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArraysAndLoops.resx">
+      <DependentUpon>ArraysAndLoops.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CVForm.resx">
+      <DependentUpon>CVForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -101,6 +134,9 @@
     <EmbeddedResource Include="CalculateTwoNumbers.resx">
       <DependentUpon>CalculateTwoNumbers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Machine Learning and Deep Learning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RE2GndP_1920x1080.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

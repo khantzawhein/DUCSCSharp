@@ -69,5 +69,15 @@ namespace DUCS2020CSharp.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RE2GndP_1920x1080 {
+            get {
+                object obj = ResourceManager.GetObject("RE2GndP_1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

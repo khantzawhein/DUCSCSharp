@@ -32,11 +32,13 @@
             this.btnCalculator = new System.Windows.Forms.Button();
             this.btnMenuBarEx = new System.Windows.Forms.Button();
             this.btnCalculateTwoNum = new System.Windows.Forms.Button();
+            this.btnArrandLoops = new System.Windows.Forms.Button();
+            this.btnUserForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnMultiplyTable
             // 
-            this.BtnMultiplyTable.Location = new System.Drawing.Point(282, 23);
+            this.BtnMultiplyTable.Location = new System.Drawing.Point(48, 40);
             this.BtnMultiplyTable.Name = "BtnMultiplyTable";
             this.BtnMultiplyTable.Size = new System.Drawing.Size(165, 45);
             this.BtnMultiplyTable.TabIndex = 0;
@@ -46,7 +48,7 @@
             // 
             // btnCalculator
             // 
-            this.btnCalculator.Location = new System.Drawing.Point(282, 84);
+            this.btnCalculator.Location = new System.Drawing.Point(48, 96);
             this.btnCalculator.Name = "btnCalculator";
             this.btnCalculator.Size = new System.Drawing.Size(165, 45);
             this.btnCalculator.TabIndex = 1;
@@ -56,17 +58,17 @@
             // 
             // btnMenuBarEx
             // 
-            this.btnMenuBarEx.Location = new System.Drawing.Point(282, 135);
+            this.btnMenuBarEx.Location = new System.Drawing.Point(48, 152);
             this.btnMenuBarEx.Name = "btnMenuBarEx";
             this.btnMenuBarEx.Size = new System.Drawing.Size(165, 45);
             this.btnMenuBarEx.TabIndex = 2;
-            this.btnMenuBarEx.Text = "MenuBarEx";
+            this.btnMenuBarEx.Text = "Adding Menus";
             this.btnMenuBarEx.UseVisualStyleBackColor = true;
             this.btnMenuBarEx.Click += new System.EventHandler(this.btnMenuBarEx_Click);
             // 
             // btnCalculateTwoNum
             // 
-            this.btnCalculateTwoNum.Location = new System.Drawing.Point(282, 186);
+            this.btnCalculateTwoNum.Location = new System.Drawing.Point(48, 208);
             this.btnCalculateTwoNum.Name = "btnCalculateTwoNum";
             this.btnCalculateTwoNum.Size = new System.Drawing.Size(165, 45);
             this.btnCalculateTwoNum.TabIndex = 3;
@@ -74,11 +76,33 @@
             this.btnCalculateTwoNum.UseVisualStyleBackColor = true;
             this.btnCalculateTwoNum.Click += new System.EventHandler(this.btnCalculateTwoNum_Click);
             // 
+            // btnArrandLoops
+            // 
+            this.btnArrandLoops.Location = new System.Drawing.Point(48, 264);
+            this.btnArrandLoops.Name = "btnArrandLoops";
+            this.btnArrandLoops.Size = new System.Drawing.Size(165, 45);
+            this.btnArrandLoops.TabIndex = 4;
+            this.btnArrandLoops.Text = "ArraysAndLoops";
+            this.btnArrandLoops.UseVisualStyleBackColor = true;
+            this.btnArrandLoops.Click += new System.EventHandler(this.btnArrandLoops_Click);
+            // 
+            // btnUserForm
+            // 
+            this.btnUserForm.Location = new System.Drawing.Point(250, 40);
+            this.btnUserForm.Name = "btnUserForm";
+            this.btnUserForm.Size = new System.Drawing.Size(165, 45);
+            this.btnUserForm.TabIndex = 5;
+            this.btnUserForm.Text = "User Form";
+            this.btnUserForm.UseVisualStyleBackColor = true;
+            this.btnUserForm.Click += new System.EventHandler(this.btnUserForm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUserForm);
+            this.Controls.Add(this.btnArrandLoops);
             this.Controls.Add(this.btnCalculateTwoNum);
             this.Controls.Add(this.btnMenuBarEx);
             this.Controls.Add(this.btnCalculator);
@@ -95,6 +119,8 @@
         private System.Windows.Forms.Button btnCalculator;
         private System.Windows.Forms.Button btnMenuBarEx;
         private System.Windows.Forms.Button btnCalculateTwoNum;
+        private System.Windows.Forms.Button btnArrandLoops;
+        private System.Windows.Forms.Button btnUserForm;
     }
 }
 
